@@ -5,7 +5,7 @@ Changelog
 0.2.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add instructions to README.md on how to do a release.
 
 
 0.1.0 (2018-04-25)
