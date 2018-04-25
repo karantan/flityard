@@ -5,7 +5,7 @@ Changelog
 0.3.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add additional development installation to README.md.
 
 
 0.2.0 (2018-04-25)

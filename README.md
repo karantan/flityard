@@ -10,20 +10,24 @@ You need to have [`flit` installed](https://github.com/takluyver/flit#install).
 You also need to have `.pypirc` file
 [configured](https://docs.python.org/3.6/distutils/packageindex.html#pypirc).
 
+To install your package during development use:
 
+```bash
+$ flit install --symlink --python path/to/virtualenv/bin/python
+```
 
 ## How to do a release
 
 In `__init__.py` we have version number in a `__version__` attribute at the top.
 Once we do a release we immediately bump the version number by a patch/bugfix
-level and append .dev to it. We follow
+level and append `.dev0` to it. We follow
 [semantic versioning](https://semver.org/).
 
-When it comes time to release we can just drop the .dev from `__version__` and
+When it comes time to release we can just drop the `.dev0` from `__version__` and
 the `CHANGELOG.md`, commit, and run flit publish.
 
 
-When you drop the .dev from `__version__` creata a commit with the following
+When you drop the `.dev0` from `__version__` creata a commit with the following
 message: `Preparing release <version>`
 
 Then publish the release:
@@ -33,7 +37,7 @@ $ flit publish
 ```
 
 Then "go back to development":
-  - add the `.dev` to `__version__`
+  - add the `.dev0` to `__version__`
   - create a commit with the following message: `Back to development: <new_version>`
 
 To `CHANGELOG.md` add new unreleased section:
