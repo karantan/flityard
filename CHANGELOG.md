@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.2.0 (unreleased)
+0.2.0 (2018-04-25)
 ------------------
 
 - Add instructions to README.md on how to do a release.
